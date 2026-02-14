@@ -1,12 +1,18 @@
 import os
 
+def print_header():
+ print("System Info")
+ print("-----------------")
+
+def check_services(service_list):
+ for s in services:
+    print("Checking service:", s)
+
 hostname = os.uname().nodename
+services = ["ssh", "cron", "nginx"]
 
-cpu_usage = "N/A"
-memory_usage = "N/A"
+print_header()
 
-print("System INfo")
-print("-----------------")
 print("Hostname", hostname)
-print("CPU Usage:", cpu_usage)
-print("Memory Usage:", memory_usage)
+
+check_services(services)
