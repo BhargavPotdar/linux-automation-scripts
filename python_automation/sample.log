@@ -1,0 +1,7 @@
+INFO: service started
+INFO: connection established
+ERROR: failed to connect to database
+INFO: retrying connection
+WARNING: Low memory
+ERROR: timeout occured
+INFO: service running
